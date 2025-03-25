@@ -38,13 +38,35 @@ int main()
     // }
 
     // Alphabets Reverse Triangle Pattern
+    // for (int i = 0; i < n; i++)
+    // {
+    //     for (int j = i; j >= 0; j--)
+    //     {
+    //         char ch = 65 + n - j - 1;
+    //         cout << ch << "\t";
+    //     }
+    //     cout << endl;
+    // }
+
+    // UpDown Count Star Filler pattern
+
     for (int i = 0; i < n; i++)
     {
-        for (int j = i; j >= 0; j--)
+        for (int j = 1; j <= n - i; j++)
         {
-            char ch = 65 + n - j - 1;
-            cout << ch << "\t";
+            cout << j << " ";
         }
+
+        for (int j = 0; j < 2 * i; j++)
+        {
+            cout << "*" << " ";
+        }
+
+        for (int j = n - i; j > 0; j--)
+        {
+            cout << j << " ";
+        }
+
         cout << endl;
     }
 
