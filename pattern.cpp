@@ -6,13 +6,23 @@ int main()
     cin >> n;
 
     // Counting Pattern
-    for (int i = 0; i < n; i++)
+    // for (int i = 0; i < n; i++)
+    // {
+    //     for (int j = 1; j <= n; j++)
+    //     {
+    //         cout << n * i + j << "\t";
+    //     }
+    //     cout << "\n";
+    // }
+
+    // Descending Count from Row number
+    for (int i = 1; i <= n; i++)
     {
-        for (int j = 1; j <= n; j++)
+        for (int j = i; j >= 1; j--)
         {
-            cout << n * i + j << "\t";
+            cout << j;
         }
-        cout << "\n";
+        cout << endl;
     }
 
     return 0;
