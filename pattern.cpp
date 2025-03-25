@@ -16,11 +16,23 @@ int main()
     // }
 
     // Descending Count from Row number
-    for (int i = 1; i <= n; i++)
+    // for (int i = 1; i <= n; i++)
+    // {
+    //     for (int j = i; j >= 1; j--)
+    //     {
+    //         cout << j;
+    //     }
+    //     cout << endl;
+    // }
+
+    // Alphabets Increment Pattern
+    for (int i = 0; i < n; i++)
     {
-        for (int j = i; j >= 1; j--)
+        for (int j = 0; j < n; j++)
         {
-            cout << j;
+            int num = i + j;
+            char ch = num + 65;
+            cout << ch << "\t";
         }
         cout << endl;
     }
