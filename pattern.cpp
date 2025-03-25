@@ -26,12 +26,23 @@ int main()
     // }
 
     // Alphabets Increment Pattern
+    // for (int i = 0; i < n; i++)
+    // {
+    //     for (int j = 0; j < n; j++)
+    //     {
+    //         int num = i + j;
+    //         char ch = num + 65;
+    //         cout << ch << "\t";
+    //     }
+    //     cout << endl;
+    // }
+
+    // Alphabets Reverse Triangle Pattern
     for (int i = 0; i < n; i++)
     {
-        for (int j = 0; j < n; j++)
+        for (int j = i; j >= 0; j--)
         {
-            int num = i + j;
-            char ch = num + 65;
+            char ch = 65 + n - j - 1;
             cout << ch << "\t";
         }
         cout << endl;
