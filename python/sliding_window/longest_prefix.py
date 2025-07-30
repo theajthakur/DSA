@@ -10,6 +10,8 @@ for str in strs:
 
 
 def checkAll(strs, winsize):
+    if winsize==0:
+        return ""
     match=strs[0][:winsize]
     for str in strs:
         if str[:winsize]!=match:    
