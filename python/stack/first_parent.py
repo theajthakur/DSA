@@ -1,14 +1,13 @@
-s = "(()(()))"
-
-count=0
+s = "(()())(())(()(()))"
+stack=[]
 res=""
 for c in s:
     if c==")":
-        count-=1
-    if count:
-        res+=c
+        stack.pop()
+    if len(stack)>=1:
+        res+=(c)
     if c=="(":
-        count+=1
+        stack.append("(")
 
 
 
